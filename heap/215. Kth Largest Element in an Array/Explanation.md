@@ -1,0 +1,3 @@
+# The Solution
+
+So there are 3 Solutions for this problem.The easiest one is to sort the array and then return the k th element of the array.The second one is to create a heap from the array and manually pop the first element of the array for k times.The final Solution is to use a recursive algorithm.In this algorithm we select a random element of the array as a pivot and find the ones smaller and larger than the pivot element and store them in left and right arrays.If the length of right array is equal to k we have found the element and if it is not the element is either in the left or the right arrays of the pivot.Note that the `k-len(right)-1` element of the left array is the answer if it resides in the left array.
